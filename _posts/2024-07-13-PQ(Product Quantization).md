@@ -140,7 +140,7 @@
     
 ADC和SDC其实最终的复杂度是$O(NM)$，其中$N$是query的数量，$M$是子空间的数量，比起暴力对比$O(ND)$（其中$D$是原先的维度）来说要快一点，但是还是不实际而且效果也不好，故需要一种好的办法来做搜索，于是IVF这种倒排索引的方式就被引入了。
 
-![Untitled](https://github.com/xwt1/xwt1.github.io/tree/main/_misc/picture/2024-07-13-PQ(Product_Quantization)/PQ+IVF.png)
+![Untitled](https://raw.githubusercontent.com/xwt1/xwt1.github.io/main/_misc/picture/2024-07-13-PQ(Product_Quantization)/PQ%2BIVF.png)
 
 - 如上图，IVFPQ的大致构建步骤如下：
     1. 首先使用K-means算法在训练数据上训练一个粗糙量化器（Coarse Quantizer），用于将每一个数据$y$分配到不同的倒排索引中。
