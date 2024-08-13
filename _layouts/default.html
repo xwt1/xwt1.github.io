@@ -1,6 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<head>
+  <!-- Other head elements -->
+  <script type="text/javascript" async
+    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.0/es5/tex-mml-chtml.js">
+  </script>
+  <script type="text/javascript">
+    MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']]
+      },
+      options: {
+        skipHtmlTags: ["script", "noscript", "style", "textarea", "pre"]
+      }
+    };
+  </script>
+</head>
+
+
 {% include head.html %}
 
 <!-- hack iOS CSS :active style -->
