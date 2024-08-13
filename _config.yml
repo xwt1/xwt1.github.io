@@ -52,8 +52,16 @@ gems: [jekyll-paginate]
 # document: http://jekyllrb.com/docs/configuration/#kramdown
 markdown: kramdown
 highlighter: rouge
+# kramdown:
+#   input: GFM                            # use Github Flavored Markdown !important
 kramdown:
-  input: GFM                            # use Github Flavored Markdown !important
+  input: GFM
+  syntax_highlighter_opts:
+    disable: true
+  hard_wrap: false
+  auto_ids: true
+  footnote_nr: 1
+
 
 
 
