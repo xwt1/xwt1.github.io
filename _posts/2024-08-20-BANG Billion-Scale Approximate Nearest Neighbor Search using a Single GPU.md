@@ -1,5 +1,4 @@
-# BANG: Billion-Scale Approximate Nearest Neighbor Search
-using a Single GPU
+# BANG: Billion-Scale Approximate Nearest Neighbor Search using a Single GPU
 
 # 1. Introduction
 
@@ -103,8 +102,7 @@ BANG整体包含三个阶段，如架构图中黑色标号所标注的那样：
             3. GPU挑选下一轮的候选结点。
 3. **Re-ranking**：使用实际数据而非压缩数据对最终搜索结果进行排序，然后取最终最近的$k$个元素作为最终结果集合。
 
-# 4. BANG: BILLION-SCALE ANN SEARCH ON A
-SINGLE GPU
+# 4. BANG: BILLION-SCALE ANN SEARCH ON A SINGLE GPU
 
 ## 4.1 Search Algorithm
 
